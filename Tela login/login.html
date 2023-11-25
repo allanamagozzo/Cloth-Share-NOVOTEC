@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tela de login</title>
-</head>
-<body>
-  <main>
-    <div class="form">
-      <h1 class="titulo">Acessar minha conta</h1>
-      <p class="paragrafo">Preencha as informações com seus dados.</p>
-      <form action="#">
-        <label class="label-email" for="email">E-mail</label>
-        <input class="input-email" type="email">
-        <label class="label-email" for="password">Senha</label>
-        <input class="input-email" type="password">
-        <div class="opcoes-senha">
-          <input type="checkbox">
-          <label for="checkbox">Lembrar minha senha</label>
-          <a href="#">Esqueci minha senha</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/login.css">
+    <title>Tela de login</title>
+  </head>
+  <body>
+    <main>
+      <div class="form">
+        <h1 class="titulo">Acessar minha conta</h1>
+        <p class="paragrafo">Preencha as informações com seus dados.</p>
+        <form action="#">
+          <div class="div-email">
+            <label class="label-email" for="email">E-mail</label>
+            <input class="input-email" type="email" required placeholder="alana@gmail.com" />
+          </div>
+          <div class="div-senha">
+            <label class="label-email" for="password">Senha</label>
+            <input class="input-email" type="password" required placeholder="1455" />
+          </div>
+          <div class="opcoes-senha">
+            <input type="checkbox" />
+            <label for="checkbox">Lembrar minha senha</label>
+            <a href="#">Esqueci minha senha</a>
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
+        <div class="login-alternative">
+          <a href="#">
+            <!-- <img src="assets/SVGs/facebook-icon.svg" alt="" /> -->
+          </a>
+          <a href="">
+            <!-- <img src="assets/SVGs/google-icon.svg" alt="" /> -->
+          </a>
         </div>
-      </form>
-    </div>
-  </main>
-</body>
+        <p class="paragrafo">Para criar uma conta, <a href="">Clique aqui.</a></p>
+      </div>
+    </main>
+  </body>
 </html>

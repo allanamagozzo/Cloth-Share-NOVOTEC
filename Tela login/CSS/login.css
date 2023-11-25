@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #003049;
+  --primary-color-variant-one: #224c61;
+  --primary-color-variant-two: #44677a;
+  --primary-color-variant-three: #668392;
+  --primary-color-variant-four: #889eaa;
+  --primary-color-variant-five: #abbac2;
+  --primary-color-variant-six: #ccd6db;
+  --secondary-color: #d62828;
+  --secondary-color-variant-one: #dc4545;
+  --secondary-color-variant-two: #e16161;
+  --secondary-color-variant-three: #e67e7e;
+  --secondary-color-variant-four: #ec9b9b;
+  --secondary-color-variant-five: #f1b7b7;
+  --secondary-color-variant-six: #f7d4d4;
+  --tertiary-color: #2a9d8f;
+  --tertiary-color-variant-one: #3cb1a1;
+  --tertiary-color-variant-two: #4dc9b3;
+  --tertiary-color-variant-three: #5ee1c5;
+  --tertiary-color-variant-four: #6ff9d6;
+  --tertiary-color-variant-five: #80ffe8;
+  --tertiary-color-variant-six: #91fffa;
+  --primary-gradient: linear-gradient(44deg, #c1802a 0.44%, #fdb 99.52%);
+  --secondary-gradient: linear-gradient(225deg, #001837 0.44%, #004cae 99.52%);
+  --p-additional-color: #f77f00;
+  --p-additional-color-variant-one: #f89022;
+  --p-additional-color-variant-two: #f9a144;
+  --p-additional-color-variant-three: #fab266;
+  --p-additional-color-variant-four: #fbc388;
+  --p-additional-color-variant-five: #fcd4aa;
+  --p-additional-color-variant-six: #fde5cc;
+  --s-additional-color: #fcbf49;
+  --s-additional-color-variant-one: #fcc861;
+  --s-additional-color-variant-two: #fdd07a;
+  --s-additional-color-variant-three: #fdd992;
+  --s-additional-color-variant-four: #fee1aa;
+  --s-additional-color-variant-five: #feeac2;
+  --s-additional-color-variant-six: #fef2db;
+  --t-additional-color: #eae2b7;
+  --t-additional-color-variant-one: #ede5bf;
+  --t-additional-color-variant-two: #efe9c8;
+  --t-additional-color-variant-three: #f1ecd0;
+  --t-additional-color-variant-four: #f4f0d9;
+  --t-additional-color-variant-five: #f6f3e1;
+  --t-additional-color-variant-six: #f9f6e9;
+  --grayscale-one: #33303e;
+  --grayscale-two: #4e4b59;
+  --grayscale-three: #5f5c6b;
+  --grayscale-four: #7a7786;
+  --grayscale-five: #8c8a97;
+  --grayscale-six: #acabb7;
+  --grayscale-seven: #c6c5ce;
+  --grayscale-eight: #e1e0e7;
+  --grayscale-nine: #f1f0f5;
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+  --b-radius-default: 10px;
+  --shadow-default: 0px 0px 20px 0px #00000026;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
+}
+
+body {
+  background-color: var(--grayscale-eight);
+  margin: 5vh 5vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 90vh;
+  padding: 7%;
+  background-color: var(--grayscale-nine);
+  box-shadow: var(--shadow-default);
+  border-radius: var(--b-radius-default);
+}
+
+::selection {
+  background-color: var(--secondary-color-variant-five);
+}
+
+div.form,
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+div.form{
+  justify-content: center;
+  height: 100%;
+}
+
+h1.titulo{
+  color: var(--grayscale-one);
+  font-family: var(--primary-font);
+  font-size: 2.8125rem;
+  font-weight: 700;
+  line-height: 150%;
+}
